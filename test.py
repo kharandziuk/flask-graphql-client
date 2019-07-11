@@ -14,7 +14,7 @@ class ExampleTest(TestCase):
             'payment_reference': 'AB1273',
             'payment_date': '2018-01-13'
         })
-        self.assertEqual(r.text, '1')
+        self.assertEqual(len(r.json), 2)
 
     def test_invalid_output(self):
         r = self.w.post_json('/link', {
