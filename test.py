@@ -1,6 +1,7 @@
 from unittest import TestCase
 from flask_webtest import TestApp
 from main import app
+import solution
 
 class ExampleTest(TestCase):
     def setUp(self):
